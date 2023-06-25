@@ -7,9 +7,11 @@ const userRoute = require("./routes/userRoute");
 const shopRoute = require("./routes/shopRoute");
 const cartRoute = require("./routes/cartRoute");
 const classRoute = require("./routes/classRoute");
-
+const dotenv = require("dotenv");
 const cors = require("cors");
 const messageRoute = require("./routes/messageRoute");
+
+dotenv.config();
 
 app.use(cors());
 app.use(express.json());
