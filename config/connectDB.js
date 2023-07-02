@@ -4,7 +4,7 @@ const db = async () => {
   try {
     await mongoose
       .connect(
-        process.env.DB_KEY,
+        process.env.Db_KEY,
         {
           useNewUrlParser: true,
           useUnifiedTopology: true,

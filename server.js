@@ -16,7 +16,8 @@ dotenv.config();
 app.use(cors());
 app.use(express.json());
 connectDb();
-app.use(express.static("../HealthClubFrontend/dist/health-club"));
+
+app.use(express.static("health-club"));
 
 app.use("/users", userRoute);
 app.use("/shop", shopRoute);
@@ -27,5 +28,5 @@ app.use("/message", messageRoute);
 app.use(errorHandling);
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`app listening on port ${port}`);
 });
