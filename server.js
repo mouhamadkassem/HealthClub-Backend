@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.json());
 connectDb();
 
-// app.use(express.static("health-club"));
+app.use(express.static("health-club"));
 
 app.use("/users", userRoute);
 app.use("/shop", shopRoute);
